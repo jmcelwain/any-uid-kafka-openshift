@@ -8,7 +8,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 @EnableKafka
 public class KafkaListenerConfig {
 
-    @KafkaListener(topics = "kafka-consumer-test", groupId = "kafka-consumer-test")
+    @KafkaListener(topics = "kafka-broker-test", groupId = "kafka-broker-test")
     public void listen(String message) {
 
         System.out.println("Received Messasge: " + message);
